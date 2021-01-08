@@ -43,6 +43,10 @@ public class Hucha {
 		 * que se pasa como argumento, empezando por los valores más altos para
 		 * minimizar su número.
 		 */
+		// pongo el contador a cero, por si se hubiese usado antes.
+		for (int i = 0; i <= 5; i++) {
+			contador[i] = 0;
+		}
 		for (int i = 5; i >= 0; i--) {
 			contador[i] = cantidad / valores[i];
 			cantidad -= contador[i] * valores[i];
@@ -79,10 +83,6 @@ public class Hucha {
 	// constructor de hucha con una cantidad concreta minimizando monedas y
 	// billetes.
 	public Hucha(int cantidadConcreta) {
-		// pongo el contador a cero, por si se hubiese usado antes.
-		for (int i = 0; i <= 5; i++) {
-			contador[i] = 0;
-		}
 		minimizarCantidad(cantidadConcreta);
 		for (int i = 0; i <= 5; i++) {
 			totales[i] += contador[i];
@@ -98,9 +98,6 @@ public class Hucha {
 			if (cantidadConcreta > getDinero()) {
 				System.out.println("No hay tanto dinero en la hucha; se cancela la operación.\n");
 			} else {
-				for (int i = 0; i <= 5; i++) {
-					contador[i] = 0;
-				}
 				minimizarCantidad(cantidadConcreta);
 				for (int i = 0; i <= 5; i++) {
 					if (contador[i] > totales[i]) {
@@ -147,9 +144,6 @@ public class Hucha {
 	// siguiendo las reglas del resto del ejercicio.
 	public void ingresar(int cantidadConcreta) {
 		if (abierta) {
-			for (int i = 0; i <= 5; i++) {
-				contador[i] = 0;
-			}
 			minimizarCantidad(cantidadConcreta);
 			for (int i = 0; i <= 5; i++) {
 				System.out.println("Se ingresan " + contador[i] + nombres[i] + ".");
