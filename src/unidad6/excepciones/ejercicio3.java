@@ -17,7 +17,7 @@ public class ejercicio3 {
 		// variables para contener las longitudes de los catetos
 		double a = 0, b = 0;
 		// variable para el do... while
-		int ahoraQue = 1;
+		int doWhile = 1;
 		// Scanner para leer la entrada estándar
 		Scanner entrada = new Scanner(System.in);
 		// se da el primer prompt
@@ -54,7 +54,7 @@ public class ejercicio3 {
 					break;
 				// si es la F, se cambia la variable del do... while para salir del bucle
 				case "F":
-					ahoraQue = 0;
+					doWhile = 0;
 					break;
 				// si se pulsa cualquier otra tecla, se avisa de los comandos válidos
 				default:
@@ -71,7 +71,7 @@ public class ejercicio3 {
 				System.out.println("Sólo los comandos A, B, C o F son válidos.");
 			}
 		} // fin do
-		while (ahoraQue == 1);
+		while (doWhile == 1);
 		// si se sale del do... while se cierra el scanner para que Eclipse no se queje
 		entrada.close();
 	} // fin main
