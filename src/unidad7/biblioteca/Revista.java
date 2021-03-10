@@ -1,4 +1,4 @@
-package unidad7;
+package unidad7.biblioteca;
 
 public class Revista extends Publicacion {
 	// atributos

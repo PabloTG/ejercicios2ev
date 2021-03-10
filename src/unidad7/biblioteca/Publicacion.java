@@ -1,4 +1,4 @@
-package unidad7;
+package unidad7.biblioteca;
 
 abstract class Publicacion {
 	// atributos
