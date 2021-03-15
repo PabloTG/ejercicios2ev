@@ -11,7 +11,7 @@ public class Revista extends Publicacion {
 	// vale también aquí: no todos los constructores que siguen son
 	// realistas, pero los incluyo por completismo. A lo que no voy
 	// a renunciar es a creer que un ejemplar de una revista tendrá
-	// un número fácilmente localizable que se pueda incluir
+	// un número (fácilmente) localizable que se pueda incluir
 	public Revista() {
 		this.setTipo("Revista");
 	}

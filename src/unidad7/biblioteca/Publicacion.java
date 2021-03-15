@@ -60,7 +60,7 @@ abstract class Publicacion {
 		this.fechaA = fecha;
 	}
 	
-	// método toString, que habrá que completar en cada tipo de publicación
+	// método toString, que habrá que ampliar/completar en cada tipo de publicación
 	@Override
 	public String toString() {
 		String devolver = tipo + "[" + codigo + ", " + titulo + ", " + fechaA;

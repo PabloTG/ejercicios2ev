@@ -51,16 +51,16 @@ public class Libro extends Publicacion {
 		this.autorxs = autorxs;
 	}
 	// me gusta más llamarlo "prestar" que "setPrestado" y la diferencia
-	// es cosmética, pero entiendo que la tradición es la tradición, así que...
+	// es cosmética, pero entiendo que la tradición es la tradición...
 	public void prestar() {
 		if (this.prestado) System.out.println("Este libro ya está prestado.");
 		this.prestado = true;
 	}
-	// ... puedo escribir ambos
+	// ... así que puedo escribir ambos
 	public void setPrestado(boolean prestado) {
 		this.prestado = prestado;
 	}
-	
+
 	// toString
 	@Override
 	public String toString() {
